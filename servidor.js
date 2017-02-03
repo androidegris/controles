@@ -13,7 +13,7 @@
 // Dependencias
 var http = require("http");
 var url =  require("url");
-var port = process.env.PORT || 5000
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 // Funcion inicia el servidor
 // enrutador: Funcion que dependiendo de la ruta elige el manejador adecuado
